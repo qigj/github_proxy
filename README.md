@@ -1,4 +1,4 @@
-# 
+# github_proxy# 
 
 #### Github 加速代理
 
@@ -11,9 +11,9 @@ https://1.github.010716.xyz/https://raw.githubusercontent.com/qigj/go_aliddns/re
 
 #### 自动检测脚本
 ```bash
-test_url="https://raw.githubusercontent.com/qigj/go_aliddns/refs/heads/master/README.md"
+test_url="https://raw.githubusercontent.com/qigj/github_proxy/refs/heads/main/Textfile"
 
 for proxy in $(wget --timeout=5 --tries=1 -qO- https://gitee.com/qigj/mf/raw/master/github_proxy_list.txt); do
-  wget --timeout=5 --tries=1 -qO- "https://${proxy}/${test_url}" 2>/dev/null|grep -q aliyunddns && echo "https://$proxy/" && break
+  wget --timeout=5 --tries=1 -qO- "https://${proxy}/${test_url}" 2>/dev/null|grep -q 917faa3e-3faf-4f4e-8f45-ac3d1eb43856 && echo "https://$proxy/" && break
 done
-```# github_proxy
+```
