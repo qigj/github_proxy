@@ -6,7 +6,7 @@
 ```
 # 例如第一个域名 1.github.010716.xyz
 
-https://1.github.010716.xyz/https://raw.githubusercontent.com/qigj/go_aliddns/refs/heads/master/README.md
+https://1.github.010716.xyz/https://raw.githubusercontent.com/qigj/github_proxy/refs/heads/main/Textfile
 ```
 
 #### 自动检测脚本
