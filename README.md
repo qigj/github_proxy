@@ -27,5 +27,4 @@ curl
         curl -s --max-time 5 "https://${GITHUB_PROXY}/${test_url}" 2>/dev/null|grep -q 917faa3e-3faf-4f4e-8f45-ac3d1eb43856 && log "✅ Github代理地址: https://$GITHUB_PROXY/" &&  \
         break
     done
-}
 ```
