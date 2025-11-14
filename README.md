@@ -1,4 +1,4 @@
-# Github_Proxy
+# Github Proxy
 
 #### Github 加速代理
 
