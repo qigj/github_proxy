@@ -26,7 +26,7 @@ echo "[$(date '+%F %T')]  🔍 检查 Github Proxy ..."
 test_url="https://raw.githubusercontent.com/qigj/github_proxy/refs/heads/main/Textfile"
 
 for GITHUB_PROXY in $(curl -s --max-time 5 https://gitee.com/qigj/github_proxy/raw/master/github_proxy_list.txt); do
-  curl -s --max-time 5 "https://${GITHUB_PROXY}/${test_url}" 2>/dev/null|grep -q 917faa3e-3faf-4f4e-8f45-ac3d1eb43856 && lecho "[$(date '+%F %T')]  ✅ Github代理地址: https://$GITHUB_PROXY/" &&  \
+  curl -s --max-time 5 "https://${GITHUB_PROXY}/${test_url}" 2>/dev/null|grep -q 917faa3e-3faf-4f4e-8f45-ac3d1eb43856 && echo "[$(date '+%F %T')]  ✅ Github代理地址: https://$GITHUB_PROXY/" &&  \
   break
 done
 ```
