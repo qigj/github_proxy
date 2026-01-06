@@ -29,3 +29,11 @@ curl_github_proxy() {
 curl_github_proxy "$DOWNLOAD_URL" -sL --max-time 180 -o "$INSTALL_DIR/$TAR_NAME" || { log "❌ 下载失败"; return; }
 
 ```
+#### 直接使用
+``` bash
+curl -s https://gitee.com/qigj/github_proxy/raw/master/github_proxy.sh| bash -s https://github.com/docker/compose/releases/latest/download/docker-compose-linux-aarch64
+```
+
+``` bash
+bash <(curl -s https://gitee.com/qigj/github_proxy/raw/master/github_proxy.sh) https://github.com/docker/compose/releases/latest/download/docker-compose-linux-aarch64
+```
