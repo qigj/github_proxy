@@ -31,9 +31,9 @@ curl_github_proxy "$DOWNLOAD_URL" -sL --max-time 180 -o "$INSTALL_DIR/$TAR_NAME"
 ```
 #### 直接使用
 ``` bash
-curl -s [https://gitee.com/qigj/github_proxy/raw/master/github_proxy.sh](https://raw.giteeusercontent.com/qigj/github_proxy/raw/master/github_proxy.sh)| bash -s https://github.com/docker/compose/releases/latest/download/docker-compose-linux-aarch64
+curl -s https://raw.giteeusercontent.com/qigj/github_proxy/raw/master/github_proxy.sh| bash -s https://github.com/docker/compose/releases/latest/download/docker-compose-linux-aarch64
 ```
 
 ``` bash
-bash <(curl -s [https://gitee.com/qigj/github_proxy/raw/master/github_proxy.sh](https://raw.giteeusercontent.com/qigj/github_proxy/raw/master/github_proxy.sh)) https://github.com/docker/compose/releases/latest/download/docker-compose-linux-aarch64
+bash <(curl -s https://raw.giteeusercontent.com/qigj/github_proxy/raw/master/github_proxy.sh) https://github.com/docker/compose/releases/latest/download/docker-compose-linux-aarch64
 ```
